@@ -6,9 +6,9 @@ import UserLayout from "../../Layouts/UserLayout";
 
 //Lazy loaded pages
 const LandingPage = lazy(() => import("../../pages/LandingPage/LandingPage"));
-const LoginPage = lazy(() => import("../../pages/userPages/auth/LoginPage"));
+const LoginPage = lazy(() => import("../../pages/auth/LoginPage"));
 const RegisterPage = lazy(() =>
-  import("../../pages/userPages/auth/RegisterPage")
+  import("../../pages/auth/RegisterPage")
 );
 
 export const userRouter = createBrowserRouter([

@@ -4,11 +4,11 @@ const LandingPage = () => {
   return (
     <div className="bg-gray-50">
       {/* Hero Section */}
-      <header className="bg-gradient-to-r from-gray-900 to-gray-700 text-white py-12">
+      <header className="bg-lighterBlue text-white py-12">
         <div className="container mx-auto px-4 text-center md:text-left grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Left Content */}
           <div className="flex flex-col justify-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">
+            <h1 className="text-4xl md:text-5xl poppins-bold mb-4">
               Transform Your Space with E-com_World
             </h1>
             <p className="text-lg mb-6">

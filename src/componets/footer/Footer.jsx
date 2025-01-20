@@ -11,8 +11,8 @@ const Footer = () => {
           <div>
             <h2 className="text-lg font-bold mb-4">About Us</h2>
             <p className="text-sm">
-              We are committed to delivering high-quality furniture for your
-              home and office. Explore our wide range of products to find your
+              We are committed to delivering high-quality products for you.
+              Explore our wide range of products to find your
               perfect fit.
             </p>
           </div>

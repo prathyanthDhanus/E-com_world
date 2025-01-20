@@ -1,3 +1,5 @@
+import React from 'react';
+
 export const CustomButton = ({
   buttonText,
   className,
@@ -8,7 +10,7 @@ export const CustomButton = ({
   return (
     <div>
       <button
-        className={`flex items-center border justify-center rounded-md poppins-light ${className}`}
+        className={`flex items-center border justify-center rounded-3xl poppins-light ${className}`}
         onClick={onClick}
         type={type}
         disabled={disabled}

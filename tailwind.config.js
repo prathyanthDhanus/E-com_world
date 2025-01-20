@@ -6,6 +6,8 @@ export default {
       colors: {
         customYellow: "#EDA415",
         customBlue: "#003F62",
+        lighterBlue: "#005F93",
+        customWhite: "#ffffff",
       },
     },
   },
