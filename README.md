@@ -1,8 +1,36 @@
-# React + Vite
+# E-Commerce
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An e-commerce frontend is the user interface (UI) of an online shopping platform, designed to provide an intuitive and visually appealing experience for customers.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- **User Authentication: Users can register and log in to access app.** 
+- **Home: Users can view available categories and start exploring them.** 
+- **Responsive Design: The app is responsive and works well across different devices.** 
+
+## Technologies Used
+- **React: Frontend framework for building the user interface.** 
+- **React Router: For handling navigation between pages.** 
+- **Axios: For making API requests to the backend.** 
+- **Tailwind css: For styling the components and ensuring a responsive and user-friendly interface.** 
+- **Tanstack-query: Smooth data fetching experience** 
+- **React-Hot-Toast : Notification** 
+
+
+
+
+## Quick Start
+
+To get started with E-commerce  App Frontend on your local machine:
+
+1. **Clone the Repository**  
+   ```bash
+   git clone https://github.com/prathyanthDhanus/E-com_world.git
+
+3. **Start the Application**
+   npm run dev
+
+
+
+
