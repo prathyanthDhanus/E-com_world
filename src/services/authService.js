@@ -12,7 +12,7 @@ export const userLogin = () => {
   const navigate = useNavigate();
   return useMutation({
     mutationFn: async (values) => {
-      const response = await Axios.post("/api/user/login", values);
+      const response = await Axios.post("/api/auth/login", values);
       return response.data;
     },
     onSuccess: (data) => {
@@ -34,7 +34,7 @@ export const userRegister = () => {
   const navigate = useNavigate();
   return useMutation({
     mutationFn: async (values) => {
-      const response = await Axios.post("/api/user/register", values);
+      const response = await Axios.post("/api/auth/register", values);
       return response.data;
     },
     onSuccess: (data) => {
