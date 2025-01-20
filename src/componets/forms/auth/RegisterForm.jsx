@@ -14,8 +14,8 @@ const RegisterForm = () => {
     initialValues: registerInitialValues,
     validationSchema: registerSchema,
     onSubmit: (values) => {
-      mutate(values)
       console.log("Form Submitted with values:", values);
+      mutate(values)
     },
   });
 
@@ -24,7 +24,7 @@ const RegisterForm = () => {
     {
       title: "Username",
       type: "text",
-      name: "userName",
+      name: "username",
       placeholder: "Enter your username",
     },
     {

@@ -1,6 +1,18 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const LandingPage = () => {
+
+  const accessToken = localStorage.getItem("accessToken");
+  const navigate = useNavigate();
+  const handleShopNow = ()=>{
+    console.log('haii')
+    if(accessToken){
+      navigate("/")
+    }else{
+      navigate("/login")
+    }
+  }
   return (
     <div className="bg-gray-50">
       {/* Hero Section */}
@@ -14,7 +26,7 @@ const LandingPage = () => {
             <p className="text-lg mb-6">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
             </p>
-            <button className="bg-customYellow text-black font-semibold px-6 py-3 rounded-md hover:bg-yellow-500">
+            <button className="bg-customYellow text-black font-semibold px-6 py-3 rounded-md hover:bg-yellow-500" onClick={handleShopNow}>
               Shop Now
             </button>
           </div>

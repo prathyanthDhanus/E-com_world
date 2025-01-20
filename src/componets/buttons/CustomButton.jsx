@@ -4,7 +4,7 @@ export const CustomButton = ({
   buttonText,
   className,
   onClick,
-  type = "button",
+  type ,
   disabled,
 }) => {
   return (

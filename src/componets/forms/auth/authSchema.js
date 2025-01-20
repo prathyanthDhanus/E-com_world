@@ -25,6 +25,13 @@ export const passwordValidation = Yup.string()
   .required("Password is required");
 // ------------------- password validation  section end --------------------
 
+// ------------------- role validation  section --------------------
+export const roleValidation = Yup.string()
+  .oneOf(["user", "admin"], "Role must be either 'user' or 'admin'")
+  .default("user") // Default role is 'user'
+  .required("Role is required");
+// ------------------- role validation  section end --------------------
+
 // --------------------- login section ----------------------
 export const loginInitialValues = {
   email: "",
@@ -39,14 +46,16 @@ export const loginSchema = Yup.object().shape({
 
 //--------------------- register section ----------------------
 export const registerInitialValues = {
-  userName: "",
+  username: "",
   email: "",
   password: "",
+  role: "user",
 };
 
 export const registerSchema = Yup.object().shape({
-  userName: nameValidation,
+  username: nameValidation,
   email: emailValidation,
   password: passwordValidation,
+  role: roleValidation,
 });
 //-------------------- register section end ---------------------

@@ -13,8 +13,8 @@ const LoginForm = () => {
     initialValues: loginInitialValues,
     validationSchema: loginSchema,
     onSubmit: (values) => {
-      mutate(values);
       console.log("Form Submitted with values:", values);
+      mutate(values);
     },
   });
 
